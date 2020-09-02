@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.header-content{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 5% 0 5%;
+}
+
+.logo, nav{
+    flex: 1;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link{
+    color: grey;
+}
+
+.nav-link:after {
+    display: block;
+    content: '';
+    transform: scaleX(0);
+    transition: transform .25s ease-in-out;
+    border-bottom: 3px solid lightblue;
+}
+.nav-link:hover:after, .active{
+    transform: scaleX(1);
+    border-bottom: 3px solid lightblue;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    height: 40vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 15vh;
+}
+
+.hero .img-container img{
+    width: 50vh;
+    height: 50vh;
+    border-radius: 50%;
+}
+
+.hero .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.hero .text h1{
+    margin-bottom: 35px;
+    font-size: 48px;
+    text-align: left;
+    border-bottom: 3px solid lightblue;
+    padding-bottom: 35px;
+}
+
+svg{
+    display: flex;
+    z-index: 2;
+}
+
+.qualities{
+    background: lightblue;
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 10% 5% 0 5%;
+    padding-top: 0;
+}
+
+.quality{
+    margin: 5%;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quality h2{
+    margin: 25px 0 10px 0;
+}
+
+.wave-person{
+    background: lightblue;
+}
+
+.person{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.person-text{
+    width: 60%;
+}
+
+.name{
+    border-bottom: 3px solid lightblue;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.person-img-container {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.person-img-container img{
+    display: inline;
+    margin: -30% auto auto auto;
+    height: auto;
+    width: 100%;
+}
+
+.wave-footer{
+    background: #273036;
+    overflow: visible;
+}
+
+
+
+footer{
+    display: flex;
+    background: #273036;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+    margin-top: -20vh;
+    height: 20vh;
+}
